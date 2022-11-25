@@ -77,8 +77,14 @@ WSGI_APPLICATION = 'flink_crud.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'flink-crud-django',
+        'USER': 'postgres',
+        'PASSWORD': 'Za:8maton02.+$',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
